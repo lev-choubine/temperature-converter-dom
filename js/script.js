@@ -1,9 +1,9 @@
 //this step will decide the direction of coversion based on the radioButton value
 
-let shotCaller;
+let shotCaller = null;
 
 function radioFunction(browser) {
-  var shotCaller = browser;
+  shotCaller = browser;
   console.log(shotCaller);
   return shotCaller;
 } 
