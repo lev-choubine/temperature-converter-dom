@@ -5,16 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Temperature Converter</title>
+  
 </head>
 <body>
   <h1>Temperature Converter</h1>
-  <input type="text"></input>
-  <button type="button" id="submit">Submit</button>
-  <button type="button" id="submit">Clear</button>
-  <script type="text/javascript" src="js/script.js"></script>
+  <form>
+     <input type="number"  id="difficult" placeholder="please enter your temperature"></input>
+    <div id="buttons">
+       <button type="button" id="submit">Submit</button>
+       <button type="button" id="clear">Clear</button>
+    </div>
+    <div id="radiodiv">
+        <input type="radio" name="browser" onclick="radioFunction(value)" id="radio" value="a">
+        <label for="celsius">&#8451</label>
+        <input type="radio" name="browser" onclick="radioFunction(value)" id="radio" value="b">
+        <label for="fahrenheit">&#8457</label>
+    </div>
+  </form>
   <div class="container">
-    <h3 class="screen">Output</h3>
+    <h3 class="screen">
+      ...
+    </h3>
   </div>
-  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/script.js"></script> 
 </body>
 </html>
